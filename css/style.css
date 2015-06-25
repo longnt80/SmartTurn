@@ -1,0 +1,232 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 70px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Logo
+ */
+
+.navbar-brand {
+  padding:0px;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * nav form
+ */
+.navbar-form {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+ #navbar select {
+  width: 200px;
+ }
+
+/*
+ * User-status
+ */
+.user-status {
+  float:left;
+  margin:22px ;
+}
+
+
+/*
+ * Links-group
+ */
+.links-group {
+  float:right;
+  width: 300px;
+}
+.links-group ul  { 
+  list-style-type: none;
+}
+.links-group ul li {
+  float:left;
+  margin:5px 10px;
+}
+
+
+/*
+ * Sidebar
+ */
+.nav-sidebar li ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.nav-sidebar li li > a {
+  padding:10px 15px 10px 40px;
+  display: block
+}
+
+.nav-sidebar li li > a:hover,
+.nav-sidebar li li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 73px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+ .middle-area {
+  border-top: 2px solid #ddd;
+ }
+
+.main {
+  padding: 0px;
+}
+
+/*.main .container-fluid .row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}*/
+
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.page-title-bar {
+  background-color: #7ac043;
+}
+
+.page-title-bar .breadcrumb {
+  background:transparent;
+  margin-bottom: 0px;
+}
+
+.page-title-bar .breadcrumb li a {
+  color: #bce29c;
+}
+.page-title-bar .breadcrumb li.active{
+  color: #fff;
+}
+
+/*
+ * fake grid
+ */
+.fake-grid-container,
+.table-container {margin-top: 10px; margin-bottom: 10px;}
+.fake-grid-container fieldset label,
+.fake-grid-container fieldset input {
+  display: inline-block;
+  width: 49%;
+}
+
+.fake-grid-container fieldset label {
+  padding:5px;
+  background-color: #ddd;
+  text-align: right;
+}
+
+.fake-grid-container .properties label {
+  background-color: transparent;
+}
+
+/*tab panel*/
+.tab-content .tab-pane {
+  border:1px solid #ddd;
+  border-top:none;
+  padding:10px;
+}
+
+.tab-content .tab-pane .fake-grid-container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*table-container*/
+.table-links-group,
+.table-pagination {
+  background-color: #ddd;
+  padding:10px;
+}
+
+.table-links-group ul, 
+.table-pagination ul  {
+  padding:0px;
+}
+
+.table-links-group ul li,
+.table-pagination ul li {
+  list-style-type: none;
+  float:left;
+  margin-right: 20px;
+}
+
+.table-pagination ul li {margin-right: 10px;}
+.table-pagination ul {
+  float:right;
+  margin-bottom:0px;
+}
+
+
+
