@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
-    $('ul.accordion li ul').hide();
+    var allPanels = $('ul.accordion li ul').hide();
+
+    $('ul.accordion li a').click(function() {
+      allPanels.slideUp();
+      $(this).parent().find('ul').slideDown();
+      return false;
+    });
 
 });
